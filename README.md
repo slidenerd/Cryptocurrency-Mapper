@@ -93,7 +93,7 @@ function mapCMCToCPC(coinmarketcap, cryptocompare){
 </ol>
 
 <h3>Where is this used?</h3>
-<b>I use this on <a href="https://botlist.co/bots/zupcoin">Zupcoin</a></b>
+<b>I use this on <a href="https://botlist.co/bots/zupcoin" target="_blank">Zupcoin</a></b>
 <p>Zupcoin is bot that can convert from any crypto/fiat to any crypto/fiat</p>
 
 
