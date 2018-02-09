@@ -16,7 +16,7 @@ Cryptocompare and Coinmarketcap offer an API where you can fetch prices and othe
   <li>Get the unique list of symbols from coinmarketcap</li>
   <li><b>BTM</b> will appear only once in this list</li>
   <li>For each such symbol, find the symbol from cryptocompare after removing their differentiating <b>*</b> or any other such extra character</li>
-  <li><b>BTM</b> which stands for Bitmark and <b>BTM*</b> which stands for Bytom will be mapped from coinmarketcap in the following structure</li>
+  <li><b>BTM</b> which stands for Bitmark on cryptocompare and <b>BTM*</b> which stands for Bytom on cryptocompare will be mapped from the symbol <b>BTM</b> on coinmarketcap in the following structure</li>
   <code>
     BTM : [BTM, BTM*]
   </code>
