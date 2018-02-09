@@ -81,7 +81,6 @@ function mapCMCToCPC(coinmarketcap, cryptocompare){
 			}
 		}
 	}
-
 	return map
 }
   </code>
@@ -93,4 +92,8 @@ function mapCMCToCPC(coinmarketcap, cryptocompare){
 <li>Would love to hear your thoughts on how matching can be improved</li>
 </ol>
 
+<h3>Where is this used?</h3>
 <b>I use this on <a href="https://botlist.co/bots/zupcoin">Zupcoin</a></b>
+<p>Zupcoin is bot that can convert from any crypto/fiat to any crypto/fiat</p>
+
+
