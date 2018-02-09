@@ -20,7 +20,7 @@ Cryptocompare and Coinmarketcap offer an API where you can fetch prices and othe
   <code>
     BTM : [BTM, BTM*]
   </code>
-  
+  <li>In the case of coins such as IOTA which is represented by <b>MIOTA</b> on coinmarketcap and <b>IOT</b> on cryptocompare, we map the names</li>
   <code>
   
 function mapCMCToCPC(coinmarketcap, cryptocompare){
@@ -43,7 +43,6 @@ function mapCMCToCPC(coinmarketcap, cryptocompare){
 		//Convert the name to lower case
 		name1 = coinmarketcap[i].name.trim().replace(ignoreSpaceRegex, "").toLowerCase()
 
-		// if(coinmarketcap[i].rank < 700){
 		//Loop through every item on cryptocompare
 		for(let j = cryptocompare.length - 1;  j >= 0; j--){
 
@@ -81,11 +80,17 @@ function mapCMCToCPC(coinmarketcap, cryptocompare){
 				}
 			}
 		}
-		// }
-
 	}
 
 	return map
 }
   </code>
 </ol>
+
+<h3>Todos</h3>
+<ol>
+<li>The mapping via names is non fuzzy in nature to keep performance levels optimal and as such doesn't include a few coins</li>
+<li>Would love to hear your thoughts on how matching can be improved</li>
+</ol>
+
+<b>I use this on <a href="https://botlist.co/bots/zupcoin">Zupcoin</a></b>
