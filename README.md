@@ -1,6 +1,6 @@
 <h1>Cryptocurrency Mapper</h1>
-<b>Goals:</b> To map symbols between coinmarketcap and cryptocompare
-<b>Problem Definition</b>
+<b>Goals:</b> To map symbols between coinmarketcap and cryptocompare<br/>
+<h3>Problem Definition</h3><br/>
 <p>
 Cryptocompare and Coinmarketcap offer an API where you can fetch prices and other relevant information.
 <ol>
@@ -9,6 +9,15 @@ Cryptocompare and Coinmarketcap offer an API where you can fetch prices and othe
 <li>For cryptocompare, Bitmark is <b>BTM</b> and Bytom is <b>BTM*</b></li>
 <li>At the time of creating this repo, coinmarketcap does not offer OHLC data while cryptocompare does</li>
 <li>The usual strategy then employed by a trading algorithms developer would be to fetch the list of symbols from coinmarketcap while fetching OHLC, historical and other relevant data from cryptocompare</li>
-<li></li>
 </ol>
 </p>
+<h3>Solution</h3>
+<ol>
+  <li>Get the unique list of symbols from coinmarketcap</li>
+  <li><b>BTM</b> will appear only once in this list</li>
+  <li>For each such symbol, find the symbol from cryptocompare after removing their differentiating <b>*</b> or any other such extra character</li>
+  <li><b>BTM</b> which stands for Bitmark and <b>BTM*</b> which stands for Bytom will be mapped from coinmarketcap in the following structure</li>
+  <code>
+    BTM : [BTM, BTM*]
+  </code>
+</ol>
